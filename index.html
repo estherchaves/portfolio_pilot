@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meu Portfólio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="sidebar_txt">
+    <img src="images/img_01.jpg" alt="Minha Foto" class="profile-pic" />
+    <h1>Esther Chaves Coelho</h1>
+    <p>Estudante de Web Development | Front-End lover | Praticando com HTML, CSS, JS & SQL | Sempre um projeto à caminho :)</p>
+    <div class="social-links">
+          <a href="https://twitter.com/estherchaves" target="_blank" aria-label="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+    
+        
+          <a href="https://github.com/estherchaves" target="_blank" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+        
+        
+          <a href="https://linkedin.com/in/estherchaves" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a> 
+    </div>
+    </div>
+
+  </aside>
+
+  <main class="content">
+    <section id="sobre">
+      <h2>Sobre Mim</h2>
+      <p>Minha jornada na tecnologia começou com a curiosidade em entender como os sites funcionam, o que me levou a aprender HTML, CSS e JavaScript.​
+       
+        Ao longo do tempo, desenvolvi projetos que refletem meu compromisso com a qualidade e a usabilidade. Estou sempre em busca de novos desafios que me permitam aplicar e aprimorar minhas habilidades.​
+  
+        Além do código, valorizo a colaboração e a troca de conhecimentos, acreditando que o aprendizado contínuo é fundamental no mundo da tecnologia.</p>
+    </section>
+
+    <hr>
+
+    <section id="projetos">
+      <h2>Meus Projetos</h2>
+      <div class="galeria">
+        <img src="images/img_03.png" alt="Projeto 1" class="projeto-1" 
+          onclick="abrirLightbox('images/img_03.png')" />
+        <img src="images/img_04.png" alt="Projeto 2" class="projeto-2" 
+          onclick="abrirLightbox('images/img_04.png')" />
+        <img src="images/img_05.png" alt="Projeto 3" class="projeto-3" 
+          onclick="abrirLightbox('images/img_05.png')" />
+      </div>
+    
+      <div id="lightbox" class="lightbox">
+        <span class="fechar" id="fecharBtn">×</span>
+        <img id="lightbox-img" src="" alt="Imagem em destaque">
+      </div>
+    </section>
+    
+    <hr>
+
+    <section id="objetivos" class="sessao-objetivos">
+      <h2>Meus Objetivos</h2>
+      <p>Estou sempre buscando evoluir como desenvolvedora e crescer tanto técnica quanto profissionalmente. No momento, meus principais focos são:</p>
+    
+      <ul>
+        <li> Aprofundar meus conhecimentos em JavaScript moderno e frameworks como React, AngularJS e jQuery.</li>
+        <li> Praticar lógica e algoritmos para melhorar minha capacidade de resolver problemas.</li>
+        <li> Contribuir com projetos open source e me envolver mais com a comunidade dev.</li>
+        <li> Conseguir minha primeira oportunidade como dev front-end júnior.</li>
+        <li> Aprender mais sobre UI/UX para criar experiências mais intuitivas.</li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

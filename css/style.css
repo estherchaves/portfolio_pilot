@@ -1,0 +1,133 @@
+
+@font-face {
+    font-family: 'Rubik Light';
+    src: url('fonts/Rubik-VariableFont_wght.ttf') format('truetype');
+  }
+  
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    background-color: #ffeee2;
+    font-family: 'Rubik Light';
+  }
+
+  
+  .sidebar {
+    width: 550px;
+    background-color: #89443d;
+    color: white;
+    padding-left: 90px;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  .profile-pic {
+    width: 250px;
+    border-radius: 50%;
+  }
+  
+  
+  div.social-links {
+    margin: 10px 0;
+    color: white;
+    text-decoration: none;
+    padding: 0;
+  }
+
+  .sidebar_txt {
+    padding-left:90px ;
+    padding-top: 190px;
+    width: 300px;
+  }
+
+  i.fab {
+    color: white;
+    font-size: 45px;
+    padding: 15px;
+  }
+  
+  .content {
+    flex: 1;
+    padding: 60px;
+    background-color: #ffeee2;
+  }
+
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      padding: 20px;
+    }
+  
+    .content {
+      padding: 20px;
+    }
+  
+    .sidebar_txt {
+      padding: 0;
+    }
+  }
+  
+  img {
+    width: 300px;
+  }
+
+
+  section {
+    margin-bottom: 40px;
+  }
+  
+  .galeria {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .galeria img {
+    width: 200px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .galeria img:hover {
+    transform: scale(1.50);
+  }
+  
+  .lightbox {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .lightbox img {
+    width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #000;
+  }
+
+  .descricao-projeto {
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    max-width: 700px;
+    line-height: 1.5;
+  }
+  
+  .fechar {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
